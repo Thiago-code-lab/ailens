@@ -27,6 +27,20 @@ Estudos de caso devem deixar claro:
 
 Não inclua dados pessoais, informações confidenciais, material proprietário sem permissão ou alegações não verificadas sobre organizações reais.
 
+## Como propor experimentos
+
+Experimentos devem ser reproduzíveis, delimitados e honestos sobre limitações. Uma proposta deve incluir:
+
+- Objetivo do experimento.
+- Hipótese ou pergunta de avaliação.
+- Dados utilizados, origem e restrições de uso.
+- Método de execução.
+- Métricas escolhidas e justificativa.
+- Limitações conhecidas.
+- Como interpretar os resultados sem prometer ausência de risco, vieses ou falhas.
+
+Não apresente resultados sem evidência, código, dados permitidos ou instruções suficientes para revisão.
+
 ## Como propor novos documentos
 
 Antes de criar um documento, verifique se o tema já existe em `docs/`, `governance/`, `checklists/`, `templates/`, `studies/` ou `experiments/`.

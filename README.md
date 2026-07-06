@@ -2,11 +2,13 @@
 
 # ailens — Laboratório Aberto de IA Responsável e Governança de IA
 
-`ailens` é um repositório brasileiro de código aberto para estudar, documentar, experimentar e aplicar IA Responsável e Governança de IA em cenários reais. O projeto reúne notas, estudos de caso, checklists, modelos de documentação, experimentos e guias práticos sobre fairness, explainability, segurança, compliance, transparência, auditoria de modelos e uso responsável de sistemas com IA.
+`ailens` é um repositório brasileiro de código aberto para estudar, documentar, experimentar e aplicar IA Responsável e Governança de IA em cenários reais. O projeto reúne notas, estudos de caso, checklists, modelos de documentação, experimentos e guias práticos sobre fairness, explainability, segurança em IA, compliance em IA, transparência, auditoria de IA e uso responsável de sistemas com IA.
+
+O valor central do projeto é transformar princípios amplos em materiais práticos: perguntas de revisão, estruturas de documentação, trilhas de estudo e critérios técnicos que ajudem equipes a discutir risco, evidência e responsabilidade com mais precisão.
 
 ![Status: Versão 1.0](https://img.shields.io/badge/status-vers%C3%A3o%201.0-1f6feb)
 ![Idioma: Português BR](https://img.shields.io/badge/idioma-portugu%C3%AAs%20BR-16a34a)
-![Tema: Responsible AI](https://img.shields.io/badge/tema-Responsible%20AI-7c3aed)
+![Tema: IA Responsável](https://img.shields.io/badge/tema-IA%20Respons%C3%A1vel-7c3aed)
 ![Licença: MIT](https://img.shields.io/badge/licen%C3%A7a-MIT-0f766e)
 
 ## Por que este repositório existe
@@ -27,7 +29,7 @@ O `ailens` existe para organizar esse conhecimento de forma acessível e rigoros
 - Explainability, interpretabilidade e transparência.
 - Segurança, riscos e red teaming em IA generativa.
 - Compliance em IA, evidências e documentação.
-- Auditoria de modelos, prompts, dados e decisões.
+- Auditoria de IA: modelos, prompts, dados e decisões.
 - Modelos, checklists e matrizes de risco.
 - Referências e leituras recomendadas, sempre com cautela contra desinformação.
 
@@ -35,32 +37,58 @@ O `ailens` existe para organizar esse conhecimento de forma acessível e rigoros
 
 ```text
 .
-├── README.md
-├── CONTRIBUTING.md
-├── CODE_OF_CONDUCT.md
-├── LICENSE
 ├── BannerREADME.png
-├── docs/
-│   ├── fundamentos/
-│   ├── governanca/
-│   ├── seguranca/
-│   ├── compliance/
-│   └── auditoria/
-├── studies/
-│   ├── casos-reais/
-│   └── cenarios-aplicados/
-├── experiments/
-│   ├── fairness/
-│   ├── explainability/
-│   ├── red-teaming/
-│   └── avaliacao-de-risco/
-├── governance/
-│   ├── politicas/
-│   ├── matrizes-de-risco/
-│   └── processos/
+├── CODE_OF_CONDUCT.md
+├── CONTRIBUTING.md
+├── LICENSE
+├── README.md
+├── .gitignore
 ├── checklists/
+│   ├── README.md
+│   └── checklist-ia-responsavel.md
+├── docs/
+│   ├── README.md
+│   ├── licenca.md
+│   ├── auditoria/
+│   │   └── README.md
+│   ├── compliance/
+│   │   └── README.md
+│   ├── fundamentos/
+│   │   └── README.md
+│   ├── governanca/
+│   │   └── README.md
+│   └── seguranca/
+│       └── README.md
+├── experiments/
+│   ├── README.md
+│   ├── avaliacao-de-risco/
+│   │   └── README.md
+│   ├── explainability/
+│   │   └── README.md
+│   ├── fairness/
+│   │   └── README.md
+│   └── red-teaming/
+│       └── README.md
+├── governance/
+│   ├── README.md
+│   ├── matrizes-de-risco/
+│   │   └── README.md
+│   ├── politicas/
+│   │   └── README.md
+│   └── processos/
+│       └── README.md
+├── resources/
+│   └── README.md
+├── studies/
+│   ├── README.md
+│   ├── casos-reais/
+│   │   └── README.md
+│   └── cenarios-aplicados/
+│       └── README.md
 ├── templates/
-└── resources/
+│   ├── README.md
+│   ├── matriz-risco-ia.md
+│   └── model-card.md
 ```
 
 ## Trilhas de estudo
@@ -82,7 +110,7 @@ O laboratório será organizado em frentes técnicas que permitam estudo progres
 - Métricas de fairness e análise de impacto entre grupos.
 - Explicabilidade local e global para modelos preditivos e aplicações com LLMs.
 - Model cards como documentação mínima de propósito, uso, métricas, riscos e limitações.
-- Datasheets for datasets para registrar origem, escopo, qualidade e restrições de dados.
+- Fichas de dados, também chamadas de datasheets for datasets, para registrar origem, escopo, qualidade e restrições de dados.
 - Avaliação de riscos em LLMs, incluindo alucinação, vazamento de dados e respostas inseguras.
 - Governança de aplicações com IA generativa em produtos, processos e atendimento.
 - RAG responsável, com atenção a fontes, recuperação, rastreabilidade e atualização de conteúdo.
@@ -158,8 +186,8 @@ Decisões sensíveis que afetem pessoas exigem revisão humana, contexto, docume
 
 ## Licença
 
-Este projeto está licenciado sob a Licença MIT. Consulte o arquivo [LICENSE](./LICENSE) para ver os termos.
+O projeto está licenciado sob a MIT License. Consulte o arquivo [LICENSE](./LICENSE) para ver os termos oficiais. Para uma explicação em português, consulte [docs/licenca.md](./docs/licenca.md).
 
 ## Construindo uma referência brasileira
 
-O `ailens` começa como uma base aberta e ambiciosa para fortalecer a prática de IA Responsável e AI Governance no Brasil. Se este trabalho for útil, considere marcar o repositório com uma estrela, abrir issues, propor melhorias e contribuir com materiais que ajudem a tornar sistemas de IA mais transparentes, seguros, auditáveis e responsáveis.
+O `ailens` começa como uma base aberta e ambiciosa para fortalecer a prática de IA Responsável e Governança de IA no Brasil. Se este trabalho for útil, considere marcar o repositório com uma estrela, abrir issues, propor melhorias e contribuir com materiais que ajudem a tornar sistemas de IA mais transparentes, seguros, auditáveis e responsáveis.
