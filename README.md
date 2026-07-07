@@ -1,193 +1,104 @@
 ![Banner do ailens](./BannerREADME.png)
 
-# ailens — Laboratório Aberto de IA Responsável e Governança de IA
+<div align="center">
+  <h1>ailens</h1>
 
-`ailens` é um repositório brasileiro de código aberto para estudar, documentar, experimentar e aplicar IA Responsável e Governança de IA em cenários reais. O projeto reúne notas, estudos de caso, checklists, modelos de documentação, experimentos e guias práticos sobre fairness, explainability, segurança em IA, compliance em IA, transparência, auditoria de IA e uso responsável de sistemas com IA.
+  <p><strong>Laboratório brasileiro de código aberto para Responsible AI e AI Governance.</strong></p>
+  <p>Materiais práticos para documentar riscos, avaliar sistemas com IA e fortalecer decisões responsáveis.</p>
 
-O valor central do projeto é transformar princípios amplos em materiais práticos: perguntas de revisão, estruturas de documentação, trilhas de estudo e critérios técnicos que ajudem equipes a discutir risco, evidência e responsabilidade com mais precisão.
+  <p>
+    <img alt="Status: v1.0" src="https://img.shields.io/badge/status-v1.0-1f6feb">
+    <img alt="Idioma: Português BR" src="https://img.shields.io/badge/idioma-portugu%C3%AAs%20BR-16a34a">
+    <img alt="Tema: IA Responsável" src="https://img.shields.io/badge/tema-IA%20Respons%C3%A1vel-7c3aed">
+    <img alt="Licença: MIT" src="https://img.shields.io/badge/licen%C3%A7a-MIT-0f766e">
+  </p>
 
-![Status: Versão 1.0](https://img.shields.io/badge/status-vers%C3%A3o%201.0-1f6feb)
-![Idioma: Português BR](https://img.shields.io/badge/idioma-portugu%C3%AAs%20BR-16a34a)
-![Tema: IA Responsável](https://img.shields.io/badge/tema-IA%20Respons%C3%A1vel-7c3aed)
-![Licença: MIT](https://img.shields.io/badge/licen%C3%A7a-MIT-0f766e)
+  <p>
+    <a href="./docs/README.md"><strong>Explorar documentação</strong></a>
+    ·
+    <a href="./CONTRIBUTING.md"><strong>Contribuir</strong></a>
+  </p>
+</div>
 
-## Por que este repositório existe
+## O que é o ailens
 
-A adoção de IA cresce mais rápido do que a capacidade de muitas equipes documentarem riscos, limitações, decisões e responsabilidades. Modelos e aplicações chegam a produtos, processos internos e decisões sensíveis sem que fairness, transparência, auditabilidade, segurança e governança recebam a mesma atenção dada à entrega técnica.
+O `ailens` é um laboratório aberto sobre IA Responsável e Governança de IA, criado para organizar conhecimento técnico em português do Brasil com foco em aplicação prática.
 
-No Brasil, ainda há espaço para materiais práticos, organizados e em português sobre Governança de IA aplicada: como avaliar riscos, documentar modelos, estruturar processos, testar vieses, revisar prompts, registrar evidências e manter responsabilidade humana sobre decisões automatizadas.
+O projeto reúne fundamentos, estudos de caso, templates, checklists e experimentos para apoiar discussões sobre fairness, explainability, segurança, auditoria, compliance, LLMs, RAG e documentação de modelos. A ambição é contribuir para uma referência brasileira séria, aberta e verificável.
 
-O `ailens` existe para organizar esse conhecimento de forma acessível e rigorosa. A proposta é construir um laboratório aberto, incremental e colaborativo, capaz de apoiar estudantes, profissionais, times técnicos e áreas de governança que precisam transformar princípios de IA Responsável em práticas verificáveis.
+Este repositório tem finalidade educacional e técnica. Ele não substitui consultoria jurídica, regulatória, de segurança, privacidade ou compliance.
 
-## O que você vai encontrar aqui
+## O que você encontra aqui
 
-- Fundamentos de IA Responsável.
-- Governança de IA aplicada ao ciclo de vida de sistemas.
-- Estudos de caso e cenários práticos.
-- Experimentos reproduzíveis sobre avaliação de modelos.
-- Fairness, vieses e métricas de avaliação.
-- Explainability, interpretabilidade e transparência.
-- Segurança, riscos e red teaming em IA generativa.
-- Compliance em IA, evidências e documentação.
-- Auditoria de IA: modelos, prompts, dados e decisões.
-- Modelos, checklists e matrizes de risco.
-- Referências e leituras recomendadas, sempre com cautela contra desinformação.
+- Fundamentos de IA Responsável e AI Governance.
+- Guias de governança, auditoria, compliance e segurança.
+- Experimentos sobre fairness, explainability, risco e red teaming.
+- Estudos de caso e cenários aplicados.
+- Templates de model card, matriz de risco e documentação mínima.
+- Checklists para revisão responsável de sistemas com IA.
 
 ## Estrutura do repositório
 
-```text
-.
-├── BannerREADME.png
-├── CODE_OF_CONDUCT.md
-├── CONTRIBUTING.md
-├── LICENSE
-├── README.md
-├── .gitignore
-├── checklists/
-│   ├── README.md
-│   └── checklist-ia-responsavel.md
-├── docs/
-│   ├── README.md
-│   ├── licenca.md
-│   ├── auditoria/
-│   │   └── README.md
-│   ├── compliance/
-│   │   └── README.md
-│   ├── fundamentos/
-│   │   └── README.md
-│   ├── governanca/
-│   │   └── README.md
-│   └── seguranca/
-│       └── README.md
-├── experiments/
-│   ├── README.md
-│   ├── avaliacao-de-risco/
-│   │   └── README.md
-│   ├── explainability/
-│   │   └── README.md
-│   ├── fairness/
-│   │   └── README.md
-│   └── red-teaming/
-│       └── README.md
-├── governance/
-│   ├── README.md
-│   ├── matrizes-de-risco/
-│   │   └── README.md
-│   ├── politicas/
-│   │   └── README.md
-│   └── processos/
-│       └── README.md
-├── resources/
-│   └── README.md
-├── studies/
-│   ├── README.md
-│   ├── casos-reais/
-│   │   └── README.md
-│   └── cenarios-aplicados/
-│       └── README.md
-├── templates/
-│   ├── README.md
-│   ├── matriz-risco-ia.md
-│   └── model-card.md
-```
+| Caminho | Conteúdo |
+| --- | --- |
+| [`docs/`](./docs/README.md) | Fundamentos, governança, auditoria, compliance e segurança. |
+| [`governance/`](./governance/README.md) | Matrizes, políticas e processos de governança. |
+| [`experiments/`](./experiments/README.md) | Experimentos reproduzíveis e análises técnicas. |
+| [`studies/`](./studies/README.md) | Casos reais e cenários aplicados. |
+| [`templates/`](./templates/README.md) | Modelos reutilizáveis de documentação. |
+| [`checklists/`](./checklists/README.md) | Listas de verificação para revisão prática. |
+| [`resources/`](./resources/README.md) | Referências e materiais de apoio. |
 
-## Trilhas de estudo
+## Trilhas principais
 
-| Trilha | Objetivo | Conteúdo recomendado | Resultado esperado |
-| --- | --- | --- | --- |
-| Fundamentos de IA Responsável | Entender conceitos centrais, limites e responsabilidades. | `docs/fundamentos/` e checklist inicial. | Vocabulário comum para discutir riscos, impactos e documentação. |
-| Governança e documentação | Aprender a estruturar processos e evidências ao longo do ciclo de vida. | `docs/governanca/`, `governance/` e `templates/model-card.md`. | Capacidade de desenhar um fluxo mínimo de governança para um sistema com IA. |
-| Fairness, vieses e avaliação | Identificar onde vieses podem surgir e como avaliá-los com método. | `experiments/fairness/` e `checklists/checklist-ia-responsavel.md`. | Plano inicial para avaliar impactos desiguais e limitações de dados/modelos. |
-| Explainability e transparência | Diferenciar explicabilidade local, global e comunicação para públicos distintos. | `docs/fundamentos/`, `experiments/explainability/` e model cards. | Critérios para explicar decisões e comunicar limitações de forma honesta. |
-| Segurança, red teaming e riscos | Mapear riscos de IA generativa, prompts, vazamento de dados e abuso. | `docs/seguranca/` e `experiments/red-teaming/`. | Roteiro de testes adversariais e controles básicos de segurança. |
-| Auditoria e compliance em IA | Preparar evidências, rastreabilidade e revisão contínua sem substituir assessoria especializada. | `docs/auditoria/`, `docs/compliance/` e matrizes de risco. | Visão prática do que registrar, revisar e monitorar em sistemas com IA. |
+| Trilha | Comece por | Resultado esperado |
+| --- | --- | --- |
+| Fundamentos | [`docs/fundamentos/`](./docs/fundamentos/README.md) | Vocabulário comum para discutir risco, impacto e responsabilidade. |
+| Governança | [`docs/governanca/`](./docs/governanca/README.md) e [`governance/`](./governance/README.md) | Processo mínimo para registrar decisões, evidências e controles. |
+| Fairness | [`experiments/fairness/`](./experiments/fairness/README.md) | Critérios iniciais para avaliar vieses e impactos desiguais. |
+| Explainability | [`experiments/explainability/`](./experiments/explainability/README.md) | Estratégias para explicar decisões e comunicar limitações. |
+| Segurança e red teaming | [`docs/seguranca/`](./docs/seguranca/README.md) e [`experiments/red-teaming/`](./experiments/red-teaming/README.md) | Roteiro básico para testar abuso, vazamento e respostas inseguras. |
+| Auditoria e compliance | [`docs/auditoria/`](./docs/auditoria/README.md) e [`docs/compliance/`](./docs/compliance/README.md) | Evidências para revisão contínua e rastreabilidade. |
 
-## Áreas de pesquisa e experimentação
+## Templates e checklists
 
-O laboratório será organizado em frentes técnicas que permitam estudo progressivo e experimentação responsável:
+| Material | Uso recomendado |
+| --- | --- |
+| [`templates/model-card.md`](./templates/model-card.md) | Documentar propósito, uso previsto, métricas, riscos e limitações de um modelo. |
+| [`templates/matriz-risco-ia.md`](./templates/matriz-risco-ia.md) | Mapear risco, severidade, probabilidade, mitigação e responsável. |
+| [`checklists/checklist-ia-responsavel.md`](./checklists/checklist-ia-responsavel.md) | Revisar requisitos mínimos antes de desenvolver, avaliar ou publicar um sistema com IA. |
+| [`governance/matrizes-de-risco/`](./governance/matrizes-de-risco/README.md) | Organizar critérios de risco para produtos, processos e experimentos. |
 
-- Avaliação de vieses em dados, modelos e fluxos de decisão.
-- Métricas de fairness e análise de impacto entre grupos.
-- Explicabilidade local e global para modelos preditivos e aplicações com LLMs.
-- Model cards como documentação mínima de propósito, uso, métricas, riscos e limitações.
-- Fichas de dados, também chamadas de datasheets for datasets, para registrar origem, escopo, qualidade e restrições de dados.
-- Avaliação de riscos em LLMs, incluindo alucinação, vazamento de dados e respostas inseguras.
-- Governança de aplicações com IA generativa em produtos, processos e atendimento.
-- RAG responsável, com atenção a fontes, recuperação, rastreabilidade e atualização de conteúdo.
-- Segurança de prompts, prompt injection, jailbreaks e abuso de ferramentas conectadas.
-- Monitoramento pós-deploy, drift, incidentes, métricas de qualidade e revisão humana.
-- Auditoria e rastreabilidade de dados, prompts, decisões, logs e mudanças de versão.
-
-## Casos de uso práticos
-
-Os estudos de caso serão tratados como materiais de análise e aprendizagem. Quando um caso ainda não tiver experimento reproduzível, ele será descrito como cenário de estudo, não como resultado concluído.
-
-- IA em recrutamento, triagem de currículos e apoio a entrevistas.
-- IA em crédito, risco financeiro e priorização de atendimento.
-- IA em educação, tutoria, correção e personalização de conteúdo.
-- IA em atendimento ao cliente, chatbots e classificação de chamados.
-- IA generativa em empresas, com documentos internos, automação e copilotos.
-- Sistemas de recomendação em conteúdo, comércio e serviços digitais.
-- Detecção de fraude e classificação de comportamento anômalo.
-- Classificação automatizada de documentos, tickets, contratos e registros operacionais.
-
-## Princípios do ailens
-
-- Clareza antes de complexidade.
-- Documentação como parte da governança, não como tarefa final.
-- Avaliação contínua, não pontual.
-- Transparência proporcional ao risco.
-- Segurança e privacidade desde o início.
-- Inclusão, acessibilidade e impacto social como critérios técnicos.
-- Responsabilidade humana sobre decisões automatizadas.
-- Evidências verificáveis acima de afirmações vagas.
-- Cuidado com exageros, promessas absolutas e conclusões sem base.
-
-## Como contribuir
-
-Contribuições são bem-vindas quando ajudam o repositório a ficar mais claro, útil, verificável e responsável. Você pode contribuir ao:
-
-- Corrigir textos, exemplos e inconsistências.
-- Adicionar estudos de caso bem delimitados.
-- Propor experimentos reproduzíveis.
-- Traduzir conceitos complexos para português claro.
-- Criar checklists, matrizes e modelos de documentação.
-- Revisar referências quando elas forem adicionadas.
-- Melhorar modelos existentes com critérios objetivos.
-- Abrir issues com sugestões, dúvidas, problemas ou lacunas.
-
-Leia o [guia de contribuição](./CONTRIBUTING.md) antes de enviar mudanças.
-
-## Roadmap
+## Roadmap curto
 
 | Versão | Foco |
 | --- | --- |
-| v1.0 | Base editorial, estrutura do laboratório, README, governança inicial e modelos fundamentais. |
-| v1.1 | Primeiros estudos de caso documentados com escopo, riscos e perguntas de análise. |
-| v1.2 | Modelos de governança, auditoria, model cards e matrizes de risco mais completos. |
-| v1.3 | Experimentos práticos de fairness e explainability com execução reproduzível. |
-| v1.4 | Guias de segurança e red teaming para aplicações com IA generativa. |
-| v2.0 | Laboratório prático completo com notebooks, datasets de exemplo e avaliações reproduzíveis. |
+| v1.0 | Estrutura editorial, governança inicial, templates e checklists fundamentais. |
+| v1.1 | Estudos de caso com escopo, riscos e perguntas de análise. |
+| v1.2 | Matrizes, model cards e processos de auditoria mais completos. |
+| v1.3 | Experimentos reproduzíveis de fairness, explainability e avaliação de risco. |
+| v1.4 | Guias de segurança, red teaming e governança para aplicações com LLMs. |
 
-## Público-alvo
+## Como contribuir
 
-- Estudantes de IA, dados, cloud e tecnologia.
-- Profissionais de dados, machine learning e engenharia de software.
-- Pessoas que integram IA em produtos, serviços e processos internos.
-- Times de governança, risco, segurança, privacidade e compliance.
-- Lideranças técnicas e de produto que precisam avaliar trade-offs de IA.
-- Pessoas interessadas em IA Responsável, ética em IA e Governança de IA no Brasil.
+Contribuições são bem-vindas quando tornam o projeto mais claro, útil, verificável e responsável.
 
-## Aviso importante
+Você pode contribuir com correções editoriais, novos estudos de caso, melhorias em templates, experimentos reproduzíveis, revisão de referências ou abertura de issues com lacunas bem descritas.
 
-Este repositório tem finalidade educacional e prática. Ele não substitui consultoria jurídica, regulatória, de segurança, privacidade ou compliance.
-
-Decisões sensíveis que afetem pessoas exigem revisão humana, contexto, documentação, avaliação especializada e mecanismos de contestação. Materiais deste projeto devem ser usados como apoio para reflexão, análise técnica e melhoria de processos, não como autorização automática para implantar sistemas de alto risco.
+Antes de enviar mudanças, leia o [guia de contribuição](./CONTRIBUTING.md) e o [código de conduta](./CODE_OF_CONDUCT.md).
 
 ## Licença
 
-O projeto está licenciado sob a MIT License. Consulte o arquivo [LICENSE](./LICENSE) para ver os termos oficiais. Para uma explicação em português, consulte [docs/licenca.md](./docs/licenca.md).
+O projeto está licenciado sob a MIT License. Consulte o arquivo [LICENSE](./LICENSE) para os termos oficiais e [docs/licenca.md](./docs/licenca.md) para uma explicação em português.
 
-## Construindo uma referência brasileira
+<div align="center">
+  <p><strong>Use, revise e contribua para tornar sistemas de IA mais transparentes, seguros, auditáveis e responsáveis.</strong></p>
 
-O `ailens` começa como uma base aberta e ambiciosa para fortalecer a prática de IA Responsável e Governança de IA no Brasil. Se este trabalho for útil, considere marcar o repositório com uma estrela, abrir issues, propor melhorias e contribuir com materiais que ajudem a tornar sistemas de IA mais transparentes, seguros, auditáveis e responsáveis.
+  <p>
+    <a href="https://github.com/Thiago-code-lab/ailens/stargazers">Marcar com estrela</a>
+    ·
+    <a href="https://github.com/Thiago-code-lab/ailens/issues">Abrir issue</a>
+    ·
+    <a href="./CONTRIBUTING.md">Enviar contribuição</a>
+  </p>
+</div>
